@@ -1,0 +1,90 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\" />
+    <None Remove="Database\" />
+    <None Remove="Database\Models\" />
+    <None Remove="Views\" />
+    <None Remove="Views\Home\" />
+    <None Remove="Database\ViewModels\" />
+    <None Remove="Database\ViewModels\Home\" />
+    <None Remove="Views\Authentication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Database\" />
+    <Folder Include="Database\Models\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="Database\ViewModels\" />
+    <Folder Include="Database\ViewModels\Home\" />
+    <Folder Include="wwwroot\assets\css\" />
+    <Folder Include="wwwroot\assets\images\" />
+    <Folder Include="wwwroot\assets\images\bg-images\" />
+    <Folder Include="wwwroot\assets\images\icon\" />
+    <Folder Include="wwwroot\assets\images\others\" />
+    <Folder Include="wwwroot\assets\images\products\" />
+    <Folder Include="wwwroot\assets\fonts\" />
+    <Folder Include="wwwroot\assets\js\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\build\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\dist\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\dist\css\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\dist\js\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\dist\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\dist\dom\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\src\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\src\dom\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\src\util\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\helpers\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\integration\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\dom\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\util\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\visual\" />
+    <Folder Include="wwwroot\assets\bootstrap-5.0.2\nuget\" />
+    <Folder Include="Views\Authentication\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\assets\" />
+    <Content Remove="wwwroot\assets\css\" />
+    <Content Remove="wwwroot\assets\images\" />
+    <Content Remove="wwwroot\assets\images\bg-images\" />
+    <Content Remove="wwwroot\assets\images\icon\" />
+    <Content Remove="wwwroot\assets\images\others\" />
+    <Content Remove="wwwroot\assets\images\products\" />
+    <Content Remove="wwwroot\assets\fonts\" />
+    <Content Remove="wwwroot\assets\js\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\build\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\dist\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\dist\css\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\dist\js\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\dist\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\dist\dom\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\src\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\src\dom\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\src\util\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\helpers\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\integration\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\dom\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\util\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\visual\" />
+    <Content Remove="wwwroot\assets\bootstrap-5.0.2\nuget\" />
+    <Content Remove="Views\Authentication\Login.cshtml" />
+  </ItemGroup>
+</Project>
