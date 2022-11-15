@@ -15,6 +15,7 @@
     <None Remove="Database\ViewModels\" />
     <None Remove="Database\ViewModels\Home\" />
     <None Remove="Views\Authentication\" />
+    <None Remove="Views\SharedFolder\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -54,6 +55,7 @@
     <Folder Include="wwwroot\assets\bootstrap-5.0.2\js\tests\visual\" />
     <Folder Include="wwwroot\assets\bootstrap-5.0.2\nuget\" />
     <Folder Include="Views\Authentication\" />
+    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
@@ -85,6 +87,5 @@
     <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\util\" />
     <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\visual\" />
     <Content Remove="wwwroot\assets\bootstrap-5.0.2\nuget\" />
-    <Content Remove="Views\Authentication\Login.cshtml" />
   </ItemGroup>
 </Project>
