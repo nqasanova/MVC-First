@@ -5,7 +5,12 @@ namespace DemoApplication.Controllers
 {
     public class AuthenticationController : Controller
     {
-        public ViewResult Index()
+        public ViewResult Login()
+        {
+            return View();
+        }
+
+        public ViewResult Register()
         {
             return View();
         }
