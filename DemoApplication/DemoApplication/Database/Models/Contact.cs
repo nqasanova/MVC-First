@@ -8,14 +8,7 @@ namespace DemoApplication.Database.Models
         public string Email { get; set; }
         public string Phone { get; set; }
         public string Message { get; set; }
-
-        public Contact(int id, string name, string email, string phone, string message)
-        {
-            Id = id;
-            Name = name;
-            Email = email;
-            Phone = phone;
-            Message = message;
-        }
+        public DateTime CreatedAt { get; set; }
+        public User User { get; set; }
     }
 }
