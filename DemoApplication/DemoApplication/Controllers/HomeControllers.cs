@@ -1,33 +1,47 @@
 ﻿using System;
 using DemoApplication.Database;
 using DemoApplication.Database.Models;
+using DemoApplication.Database.ViewModels.Home.Contact;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoApplication.Controllers
 {
     public class HomeController : Controller
     {
-        public ViewResult Index()
+        public ActionResult Index()
         {
             return View();
         }
 
-        //Read
         [HttpGet]
         public ActionResult Contact()
         {
             return View();
         }
 
-        //Create
         [HttpPost]
-        public ActionResult Contact([FromForm] int id, [FromForm] string name, [FromForm] string email, [FromForm] string phone, [FromForm] string message)
+        public ActionResult Contact([FromForm] CreateViewModel contactViewModel)
         {
-            DatabaseAccess.Contacts.Add(new Contact(TablePKAutoIncrement.ContactCounter, name, email, phone, message));
-            return RedirectToAction("contacts", "home"); //type safety
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            DatabaseAccess.Contacts.Add(new Contact
+            {
+                Id = TablePkAutoincrement.ContactCounter,
+                Name = contactViewModel.Name,
+                Email = contactViewModel.Email,
+                Message = contactViewModel.Message,
+                Phone = contactViewModel.PhoneNumber,
+                CreatedAt = DateTime.Now
+            });
+
+            return RedirectToAction(nameof(Contacts));
         }
 
-        public List<Contact> contacts()
+        [HttpGet]
+        public List<Contact> Contacts()
         {
             return DatabaseAccess.Contacts;
         }
