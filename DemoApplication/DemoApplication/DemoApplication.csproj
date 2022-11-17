@@ -12,10 +12,10 @@
     <None Remove="Database\Models\" />
     <None Remove="Views\" />
     <None Remove="Views\Home\" />
-    <None Remove="Database\ViewModels\" />
-    <None Remove="Database\ViewModels\Home\" />
     <None Remove="Views\Authentication\" />
     <None Remove="Views\SharedFolder\" />
+    <None Remove="Views\Book\" />
+    <None Remove="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
@@ -25,8 +25,6 @@
     <Folder Include="Views\Home\" />
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\assets\" />
-    <Folder Include="Database\ViewModels\" />
-    <Folder Include="Database\ViewModels\Home\" />
     <Folder Include="wwwroot\assets\css\" />
     <Folder Include="wwwroot\assets\images\" />
     <Folder Include="wwwroot\assets\images\bg-images\" />
@@ -56,6 +54,9 @@
     <Folder Include="wwwroot\assets\bootstrap-5.0.2\nuget\" />
     <Folder Include="Views\Authentication\" />
     <Folder Include="Views\Shared\" />
+    <Folder Include="Views\Book\" />
+    <Folder Include="Database\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
@@ -87,5 +88,6 @@
     <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\unit\util\" />
     <Content Remove="wwwroot\assets\bootstrap-5.0.2\js\tests\visual\" />
     <Content Remove="wwwroot\assets\bootstrap-5.0.2\nuget\" />
+    <Content Remove="Views\Book\Details.cshtml" />
   </ItemGroup>
 </Project>
