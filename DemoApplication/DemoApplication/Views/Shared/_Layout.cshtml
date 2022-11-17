@@ -1,22 +1,21 @@
 ﻿<!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Pustok - Book Store HTML Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Use Minified Plugins Version For Fast Page Load -->
-    <link rel="stylesheet" type="text/css" media="screen" href="~/assets/css/plugins.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="~/assets/css/main.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="stylesheet" asp-append-version="true" type="text/css" media="screen" href="~/assets/css/plugins.css" />
+    <link rel="stylesheet" asp-append-version="true" type="text/css" media="screen" href="~/assets/css/main.css" />
+    <link rel="shortcut icon" asp-append-version="true" type="image/x-icon" href="~/assets/image/favicon.ico">
 
     @RenderSection("style", required: false)
 </head>
 <body>
-
     <div class="site-wrapper" id="top">
         <!--=================================
-                       Navbar
+                    Navbar
         ===================================== -->
 
         <div class="site-header d-none d-lg-block">
@@ -25,7 +24,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-3 ">
                             <a asp-controller="home" asp-action="index" class="site-brand">
-                                <img src="~/assets/images/logo.png" alt="">
+                                <img src="~/assets/image/logo.png" alt="">
                             </a>
                         </div>
                         <div class="col-lg-3">
@@ -82,7 +81,8 @@
                                     <div class="login-block">
                                         <a asp-controller="authentication" asp-action="login" class="font-weight-bold">Login</a>
                                         <br>
-                                        <span>or</span><a asp-controller="authentication" asp-action="register">Register</a>
+                                        <span>or</span>
+                                        <a asp-controller="authentication" asp-action="register">Register</a>
                                     </div>
                                     <div class="cart-block">
                                         <div class="cart-total">
@@ -101,7 +101,7 @@
                                             <div class=" single-cart-block ">
                                                 <div class="cart-product">
                                                     <a href="product-details.html" class="image">
-                                                        <img src="~/assets/images/products/cart-product-1.jpg" alt="">
+                                                        <img src="~/assets/image/products/cart-product-1.jpg" alt="">
                                                     </a>
                                                     <div class="content">
                                                         <h3 class="title">
@@ -158,19 +158,19 @@
               "asNavFor": ".product-slider-nav"
               }'>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-1.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-1.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-2.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-2.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-3.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-3.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-4.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-4.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-5.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-5.jpg" alt="">
                                     </div>
                                 </div>
                                 <!-- Product Details Slider Nav -->
@@ -187,19 +187,19 @@
               "focusOnSelect": true
               }'>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-1.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-1.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-2.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-2.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-3.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-3.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-4.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-4.jpg" alt="">
                                     </div>
                                     <div class="single-slide">
-                                        <img src="~/assets/images/products/product-details-5.jpg" alt="">
+                                        <img src="~/assets/image/products/product-details-5.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -276,6 +276,7 @@
         </div>
     </div>
 
+
     <!--=================================
                 Footer Area
     ===================================== -->
@@ -285,7 +286,7 @@
                 <div class=" col-xl-3 col-lg-4 col-sm-6">
                     <div class="single-footer pb--40">
                         <div class="brand-footer footer-title">
-                            <img src="~/assets/images/logo--footer.png" alt="">
+                            <img src="~/assets/image/logo--footer.png" alt="">
                         </div>
                         <div class="footer-contact">
                             <p>
@@ -364,7 +365,7 @@
                     magna volutpat, posuere eros
                 </p>
                 <a href="#" class="payment-block">
-                    <img src="~/assets/images/icon/payment.png" alt="">
+                    <img src="~/assets/image/icon/payment.png" alt="">
                 </a>
                 <p class="copyright-text">
                     Copyright © 2019 <a href="#" class="author">Pustok</a>. All Right Reserved.
@@ -375,10 +376,10 @@
         </div>
     </footer>
 
-    <script src="js/plugins.js"></script>
-    <script src="js/ajax-mail.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="~/assets/js/plugins.js" asp-append-version="true"></script>
+    <script src="~/assets/js/ajax-mail.js" asp-append-version="true"></script>
+    <script src="~/assets/js/custom.js" asp-append-version="true"></script>
 
-    <!-- RenderSection("style", required: false -->
+    @RenderSection("script", required: false)
 </body>
 </html>
